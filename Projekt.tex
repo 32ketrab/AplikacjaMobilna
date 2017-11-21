@@ -156,7 +156,7 @@ Jako użytkownik aplikacji chcę dzielić się moimi przepisami, żebym mógł p
 
 \subsection{Backlog Item 1}
 \paragraph{Tytuł zadania.} Wstępne zaprogramowanie aplikacji.
-\paragraph{Opis zadania.} Instalacja środowiska Android Studio wraz z konfiguracją i zapoznaniem się z jego funkcjami oraz zdefiniowanie wszystkich przycisków w taki sposób, aby każdy odsyłał do odpowiednie dla niego miejsce zgodnie z mapą aplikacji.
+\paragraph{Opis zadania.} Konfiguracja środowiska MIT App Inventor i zapoznaniem się z jego funkcjami oraz zdefiniowanie wszystkich przycisków w taki sposób, aby każdy odsyłał do odpowiednie dla niego miejsce zgodnie z mapą aplikacji.
 \paragraph{Priorytet.} 1.
 \paragraph{Definition of Done.} Stworzenie mapy (szkielet) aplikacji oraz przycisków, które będą odsyłać w odpowiednie miejsce na mapie
 
@@ -164,19 +164,19 @@ Jako użytkownik aplikacji chcę dzielić się moimi przepisami, żebym mógł p
 \paragraph{Tytuł zadania.} Projektowanie prostego i czytelnego interfejsu graficznego. (\textit{user story 1})
 \paragraph{Opis zadania.} Graficzne zaprojektowanie przejrzystego interfejsu umożliwiającego proste i intuicyjne korzystanie z aplikacji.
 \paragraph{Priorytet.} 2.
-\paragraph{Definition of Done.} Przejrzysty i czytelny interfejs graficzny wdrożony do aplikacji za pomocą programu Android Studio.
+\paragraph{Definition of Done.} Przejrzysty i czytelny interfejs graficzny wdrożony do aplikacji za pomocą programu MIT App Inventor.
 
 \subsection{Backlog Item 3}
-\paragraph{Tytuł zadania.} Zaprogramowanie opcji "Szukaj".
-\paragraph{Opis zadania.} Zaprogramowanie opcji "Szukaj" w taki sposób, aby użytkownik mógł wybrać składniki które posiada, na podstawie których w kolejnym Sprincie będą wyszukiwane potrawy.
-\paragraph{Priorytet.} 3.
-\paragraph{Definition of Done.} Użytkownik ma dostęp do listy składników z których może wybrać te, które posiada lub z których chce stworzyć potrawe.
-
-\subsection{Backlog Item 4}
-\paragraph{Tytuł zadania.} Stworzenie bazy danych i dołączenie jej do aplikacji. (\textit{user story 2 , 3 , 6})
+\paragraph{Tytuł zadania.} Stworzenie bazy danych składającą się z listy przepisów i składników (\textit{user story 2 , 3 , 6})
 \paragraph{Opis zadania.} Baza danych postawiona na serwerze mysql. Baza zawiera spis potraw oraz składników, jakie potrzeba do jej sporządzenia, dodanie do każdej z potraw wartości kalorycznej oraz szacowanego czasu przyżądzenia danej potrawy
 \paragraph{Priorytet.} 2.
 \paragraph{Definition of Done.} Użytkownik jest w stanie na podstawie zawartych informacji o produktach w opcji "Szukaj" wyszukać potrawę którą może z nich sporządzić oraz po wyszukaniu jej będzie miał wgląd do listy potraw, wartości kalorycznej każdej z nich oraz szacowanego czasu jej przygotowania.
+
+\subsection{Backlog Item 4}
+\paragraph{Tytuł zadania.} Zaprogramowanie opcji "Szukaj" oraz wdrożenie jej do aplikacji.
+\paragraph{Opis zadania.} Zaprogramowanie opcji "Szukaj" w taki sposób, aby użytkownik mógł wybrać składniki które posiada, na podstawie których w kolejnym Sprincie będą wyszukiwane potrawy.
+\paragraph{Priorytet.} 3.
+\paragraph{Definition of Done.} Użytkownik ma dostęp do listy składników z których może wybrać te, które posiada lub z których chce stworzyć potrawe.
 
 \subsection{Backlog Item 5}
 \paragraph{Tytuł zadania.} Wdrożenie do aplikacji opcji sortowania. (\textit{user story 4})
@@ -215,7 +215,7 @@ Jako użytkownik aplikacji chcę dzielić się moimi przepisami, żebym mógł p
 
 \paragraph{Tytuł zadania.} Wstępne zaprogramowanie aplikacji.
 \begin{itemize}
-	\item Estymata: L.
+	\item Estymata: M.
 \end{itemize}
 
 \paragraph{Tytuł zadania.} Projektowanie prostego i czytelnego interfejsu graficznego.
@@ -227,14 +227,11 @@ Jako użytkownik aplikacji chcę dzielić się moimi przepisami, żebym mógł p
 
 \paragraph{Tytuł zadania.} Wstępne zaprogramowanie aplikacji.
 \subparagraph{Wykonawca.} Poręba Bartłomiej, Zaczyk Bartłomiej, Szafrański Ireneusz.
-\subparagraph{Realizacja.} <<Sprawozdanie z realizacji zadania (w tym ocena zgodności z estymatą). Kod programu (środowisko \texttt{verbatim}): \begin{verbatim}
-for (i=1; i<10; i++)
-...
-\end{verbatim}>>.
+\subparagraph{Realizacja.} Na początku sprintu wybraliśmy program Android Studio. Zapewnia on wiele możliwości, jednak aby sprawnie się nim obsługiwać potrzebna jest wszechstronna wiedza, której nie mieliśmy. Po Konsultacji postanowiliśmy zmienić program w którym będziemy tworzyć aplikację na MIT APP Inventor. Okazał się on bardzo intuicyjny i po kilku filmach instruktarzowych potrafiliśmy z nigo korzystać. Po zdobyciu wiedzy wzięliśmy się do pracy; Bartek Zaczyk zajął się Ekranem głównym, Ireneusz Szafrański był odpowiedzialny za ekran Przeglądaj a Bartek Poręba za ekran Szukaj oraz złożył to wszystko w całość. Pierwszym problemem jaki napotkaliśmy było zmienienie funkcji .ShowMessageDialog na ekranie Szukaj w taki sposób aby wyświetlony komunikat posiadał pole do wpisania ilości danego składnika. Problem ten nie został rozwiązany, dlatego zostanie on rozwiązany w kolejnym sprincie. Przy ekranie Przeglądaj musieliśmy przedyskutować problem wyświetlania przepisów w taki sposób, aby było to czytelne dla użytkownika, dlatego oprócz standardowego wyświetlania przepisów postanowiliśmy dodać opcje "Wyświetlania na stronie", która będzie wyświetlała wskazaną przez użytkownika ilość produktów, która po naciśnięciu przycisku "Dalej" odświerzy stronę z nowymi przepisami.
 
 
 \subsection{Sprint Review/Demo}
-<<Sprawozdanie z przeglądu Sprint'u -- czy założony cel (przyrost) został osiągnięty oraz czy wszystkie zaplanowane Backlog Item'y zostały zrealizowane? Demostracja przyrostu produktu>>.
+Sprint został wykonany
 
 
 
