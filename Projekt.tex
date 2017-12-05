@@ -264,18 +264,25 @@
 	
 	\subsection{Sprint Planning/Backlog}
 	
-	\paragraph{Tytuł zadania.} Stworzenie bazy danych i dołączenie jej do aplikacji.
+	\paragraph{Tytuł zadania.} Stworzenie bazy danych składającą się z listy przepisów i składników
 	\begin{itemize}
 		\item Estymata: L.
 	\end{itemize}
-	\subsection{Realizacja}
+	
+	\paragraph{Tytuł zadania.} Zaprogramowanie opcji "Szukaj" oraz wdrożenie jej do aplikacji.
+	\begin{itemize}
+		\item Estymata: L.
+	\end{itemize}
+	
+	\paragraph{Tytuł zadania.} Stworzenie bazy danych i dołączenie jej do aplikacji.
+	\subparagraph{Wykonawca.} Poręba Bartłomiej, Zaczyk Bartłomiej, Szafrański Ireneusz.
+	\subparagraph{Realizacja.} 
 	Po wstępnych oględzinach przepisów na różne potrawy (głównie obiadowych) postanowiliśmy wstępnie stworzyć kilka przepisów na ciasta, gdyż przepisy na nie są w pewnym sensie powtarzalne, przez co baza składników nie będzie zbyt duża, w wyniku czego łatwiej będzie zaprogramować całą aplikacje. W przyszłych sprintach mamy zaplanowane dodawanie przepisów przez użytkowników, więc baza będzie się rozwijała na zasadzie "Crowdsourcing'owej". Baza składa się z baz wszystkich składników, bazy składników potrzebnych do sporządzenia potrawy oraz bazy samych przepisów (instrukcji jak ją zrobić). Baza inicjuje się po kliknięciu w przycisk "Szukaj".
 	
+
 	\paragraph{Tytuł zadania.} Zaprogramowanie opcji "Szukaj".
-	\begin{itemize}
-		\item Estymata: L.
-	\end{itemize}
-	\subsection{Realizacja}
+	\subparagraph{Wykonawca.} Poręba Bartłomiej, Zaczyk Bartłomiej, Szafrański Ireneusz.
+	\subparagraph{Realizacja.}
 	Na rozpoczęciu sprintu zaplanowaliśmy jak będzie działąła opcja szukaj, oraz staraliśmy się znależć odpowiedni serwis oferujący darmowe stworzenie bazy danych w internecie. Wstępnie ustaliliśmy, że podzielimy bazę danych na dwa - Składniki oraz Przepisy. Wybrane przez użytkownika składniki będą podstawą do wyszukiwania całej bazy przepisów, która w zmiennej "ilosc-brakujacych-skladnikow" będzie przy każdej potrawie zapisywała ile składników brakuje. Jest to niezbędne, aby przeszukac całą baze przepisów (nawet jeśli znajduje się w niej tysiąc przepisów), ponieważ może się tak okazać, że jeśli najpierw przeszuka pierwsze 100 przepisów i posortuje je wg ilości brakujacych składników to może się okazać, że w kolejnej "setce" przepisów może znależć się taki, któremu brakuję mniej składników.
 	
 	
