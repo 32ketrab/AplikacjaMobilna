@@ -73,13 +73,24 @@
 	*Opcja sortowania potraw wg ilości brakujących składników.
 	
 	\subsection{User story 5}
+	Jako użytkownik aplikacji chcę żeby aplikacja na telefon nie zajmowała dużo miejsca, żebym mógł mieć na nim miejsce na zdjęcia i filmy. \newline
+	*Baza danych online, przez co mniejszy rozmiar aplikacji .
+	
+	\subsection{User story 6}
 	Jako użytkownik aplikacji chcę wiedzieć ile czasu potrzebuje na sporządzenie danej potrawy, żebym mógł odpowiednio zagospodarować swój wolny czas. \newline
 	*Przy każdej potrawie jest szacowany czas jej przygotowania.
 	
-	\subsection{User story 6}
+	\subsection{User story 7}
 	Jako użytkownik aplikacji chcę mieć dostęp do ulubionych przepisów kiedy jestem offline, żebym mógł korzystać z niej gdziekolwiek jestem. \newline
 	*Możliwość zapisywania ulubionych przepisów.
 	
+	\subsection{User story 8}
+	Jako użytkownik aplikacji chcę wiedzieć jak inni użytkownicy oceniają daną potrawę, żebym mógł przygotować danie które oni polecają. \newline
+	*Możliwość oceniania potraw i dzielenia się opinią z innymi użytkownikami aplikacji.
+	
+	\subsection{User story 9}
+	Jako użytkownik aplikacji chcę dzielić się moimi przepisami, żebym mógł poznać opinie na jej temat. \newline
+	*Możliwość dodawania przepisów do ogólnej bazy danych (po zatwierdzeniu).
 	
 	
 	\section{Harmonogram}
@@ -125,7 +136,7 @@
 	
 	\begin{itemize}
 		\item Data rozpoczęcia: 19.12.2017.
-		\item  Data zakończenia: 09.01.2018.
+		\item  Data zakończenia: 02.01.2018.
 		\item Scrum Master: Zaczyk Bartłomiej.
 		\item Product Owner: Szafrański Ireneusz.
 		\item Development Team: Poręba Bartłomiej, Zaczyk Bartłomiej, Szafrański Ireneusz.
@@ -134,7 +145,7 @@
 	\subsection{Sprint 5}
 	
 	\begin{itemize}
-		\item Data rozpoczęcia: 09.01.2018.
+		\item Data rozpoczęcia: 02.01.2018.
 		\item  Data zakończenia: 23.01.2018.
 		\item Scrum Master: Szafrański Ireneusz.
 		\item Product Owner: Poręba Bartłomiej.
@@ -175,6 +186,24 @@
 	\paragraph{Definition of Done.} Użytkownik będzie mógł sortować wyniki wyszukiwania wg brakujących składników (od tych przepisów w których jest komplet po te gdzie brakuje tych składników najwięcej)
 	
 	\subsection{Backlog Item 6}
+	\paragraph{Tytuł zadania.} Wstawienie Bazy danych na domene (serwer - w przypadku prezentacji). (\textit{user story 5})
+	\paragraph{Opis zadania.} Istniejącą baze danych zaimplementować na domenie (na serwerze w przypadku prezentacji) oraz przestawić źródło odczytu danych na tę domene/serwer
+	\paragraph{Priorytet.} 4.
+	\paragraph{Definition of Done.} Użytkownik może wyszukiwać przepisy z bazy danych umieszczonej na domenie/serwerze.
+	
+	\subsection{Backlog Item 7}
+	\paragraph{Tytuł zadania.} Wdrożenie opcji zapisywania przepisów offline. (\textit{user story 7})
+	\paragraph{Opis zadania.} Do każdej potrawy zostanie dodany przycisk umożliwiający zapisanie przepisu na daną potrawe do pliku, z której następnie użytkownik będzie mógł kożystać wtedy kiedy nie jest podłączony do internetu
+	\paragraph{Priorytet.} 4.
+	\paragraph{Definition of Done.} Użytkownik ma dostęp do wybranych potraw kiedy nie jest połączony z internetem poprzez plik o specjalnym rozszerzeniu.
+	
+	\subsection{Backlog Item 8}
+	\paragraph{Tytuł zadania.} Wprowadzenie systemu oceny i recenzji. (\textit{user story 8})
+	\paragraph{Opis zadania.} Zaprojektowanie systemu recenzji i oceny oraz wdrożenie jej do aplikacji.
+	\paragraph{Priorytet.} 5.
+	\paragraph{Definition of Done.} Każdy użytkownik aplikacji będzie mógł recenzować daną potrawę oraz ją oceniać.
+	
+	\subsection{Backlog Item 9}
 	\paragraph{Tytuł zadania.} Wprowadzenie do aplikacji opcji Supportu. (\textit{user story 9})
 	\paragraph{Opis zadania.} Dodanie do aplikacji zakładki "support" przez którą użytkownicy aplikacji będą mogli zgłaszać jakiekolwiek problemy z aplikacją oraz wysyłać swoje własne przepisy, które po zweryfikowaniu zostaną dodane do bazy przepisów
 	\paragraph{Priorytet.} 5.
@@ -292,54 +321,65 @@
 	
 	
 	\subsection{Sprint Review/Demo}
-	Aplikacja została powiększona o kilka przepisów, oraz zostały poprawione błędy, które wynikały z poprzedniego sprintu.
-	
+	Niestety nie udało się dodać przepisów do bazy danych na serwerze prywatnym. Było to spowodowane innym sposobem gromadzenia danych (w MIT App Inventor były to "kafelki", natomiast w środowisku XAMPP bazę danych napędzał silnik MySQL). Uznaliśmy, że konwersja ze środowiska MIT App Inventor do MySQL była by bardzo czasochłonna, dlatego ustaliliśmy, że niestety pominiemy o zadanie.
 	
 	\section{Sprint 4}
 	
-	\subsection{Cel} Wprowadzenie do aplikacji opcji Supportu..
+	\subsection{Cel} Wdrożenie do aplikacji opcji zapisywania przepisów offline oraz systemu oceny i recenzji.
 	
 	\subsection{Sprint Planning/Backlog}
 	
-	\paragraph{Tytuł zadania.} Wprowadzenie do aplikacji opcji Supportu..
+	\paragraph{Tytuł zadania.} Wdrożenie opcji zapisywania przepisów offline.
 	\begin{itemize}
 		\item Estymata: L.
 	\end{itemize}
 	
-	
-	\subsection{Realizacja}
-	
-	\paragraph{Tytuł zadania.} Wprowadzenie do aplikacji opcji Supportu..
-	\subparagraph{Wykonawca.} Poręba Bartłomiej, Zaczyk Bartłomiej, Szafrański Ireneusz.
-	\subparagraph{Realizacja.} 
-		W tym zadaniu dodaliśmy dane kontaktowe do administratora aplikacji w zakładce "Pomoc" na stronie głównej, oraz wprowadzenie możliwość wysyłania maili bezpośrednio z aplikacji
-	
-	
-	
-	\subsection{Sprint Review/Demo}
-	Użytkownik ma możliwość wysyłania maili do administratora aplikacji
-	
-	
-	\section{Sprint 5}
-	
-	\subsection{Cel} Poprawa błędów i udoskonalenie aplikacji.
-	
-	\subsection{Sprint Planning/Backlog}
-	
-	\paragraph{Tytuł zadania.} Poprawa błędów i udoskonalenie aplikacji.
+	\paragraph{Tytuł zadania.} Wprowadzenie systemu oceny i recenzji.
 	\begin{itemize}
 		\item Estymata: M.
 	\end{itemize}
 	
 	
-	\paragraph{Tytuł zadania.} Poprawa błędów i udoskonalenie aplikacji
+	\subsection{Realizacja}
+	
+	\paragraph{Tytuł zadania.} Wdrożenie opcji zapisywania przepisów offline.
 	\subparagraph{Wykonawca.} Poręba Bartłomiej, Zaczyk Bartłomiej, Szafrański Ireneusz.
-	\subparagraph{Realizacja.} Przez ostatnie dwa tygodnie skupiliśmy się na poprawach błędów, zauwarzyliśmy w aplikacji oraz dodaliśmy kilka przepisów. Ogólne założenia aplikacji zostały spełnione, czyli użytkownik będzie mógł wyszukiwać 
+	\subparagraph{Realizacja.} 
+	Z racji na to, że zrezygnowaliśmy z dodawania bazy danych na serwer wyżej przedstawione zadanie nie ma sensu, ponieważ wszzystkie przepisy znajdują się już w pliku .apk. W czasie realizacji tego zadania skupiliśmy się na poprawieniu aplikacji i udoskonaleniu jej działania.
+	
+	\paragraph{Tytuł zadania.} Wprowadzenie systemu oceny i recenzji.
+	\subparagraph{Wykonawca.} Poręba Bartłomiej, Zaczyk Bartłomiej, Szafrański Ireneusz.
+	\subparagraph{Realizacja.} 
+	Z racji na to, że zrezygnowaliśmy z dodawania bazy danych na serwer wyżej przedstawione zadanie nie ma sensu, ponieważ nie mieliśmy połączenia z internetem, który umożliwiłby komunikacje pomiędzy użytkownikami aplikacja, którzy  mogli by dzielić sie swoją opinią na temat przepisów.
+	
 	
 	
 	\subsection{Sprint Review/Demo}
-	Podgląd aplikacji gotowej do beta testów jest dostępna na GitHub'ie. Beta testy oszaczają, że aplikacja spełnia swoje podstawowe założenia, dostępna jest ona dla użytkowników, i to oni mogą zgłaszać ewentualne błędy w aplikacji, albo ewentualne pomysły na rozwinięcie jej w dobrym kierunku.
+	Ten sprint był w dużej mierze zależny od tego, czy uda się dodać bazę przepisów do internetu. Niestety nie udało się nam tego zrobić dletego zamiast robić sobie wolne postanowiliśmy poprawić błędy, które pojawiły się we wcześniejszych sprintach, oraz dodaliśmy 6 nowych przepisów.
 	
+	\section{Sprint 5}
+	
+	\subsection{Cel} Wprowadzenie możliwości recenzji, oceny oraz zapisywania przepisów w pamięci urządzenia.
+	
+	\subsection{Sprint Planning/Backlog}
+	
+	\paragraph{Tytuł zadania.} Wprowadzenie do aplikacji opcji Supportu.
+	\begin{itemize}
+		\item Estymata: M.
+	\end{itemize}
+	
+	
+	\subsection{Realizacja}
+	
+	\paragraph{Tytuł zadania.} Wprowadzenie do aplikacji opcji Supportu.
+	\subparagraph{Wykonawca.} Poręba Bartłomiej, Zaczyk Bartłomiej, Szafrański Ireneusz.
+	\subparagraph{Realizacja.} 
+	W tym sprincie dodaliśmy funkcję wysyłania maili do administratora aplikacji. Użytkownik po wpisaniu swojego maila, tematu maila oraz treści maila zostanie przekierowany na stronę logowania poczty na której ma maila, oraz po zalogowaniu się pola Adresat, Temat oraz Treść zostaną uzupęłnione zgodnie z danymi wpisanymi przez użytkownika w zakładce "Pomoc"
+	
+	
+	
+	\subsection{Sprint Review/Demo}
+	W tym sprincie stworzyliśmy użytkownikowi możliwość porozumiewania się z twórcami aplikacji. W ten sposób użytkownik będzie mógł wyrazić swoje zdanie na temat aplikacji, zgłosić problem, oraz zaproponować nowy przepis, który po zatwierdzeniu będzie mógł byc dodany w kolejnej aktualizacji. Ponadto z racji tego, że jest to ostatni sprint postanowiliśmy pozostały czas poświęcić na ostatnie poprawki.
 	
 	
 	\begin{thebibliography}{9}
@@ -357,5 +397,3 @@
 	\end{thebibliography}
 	
 \end{document}
-
-% ----------------------------------------------------------------
